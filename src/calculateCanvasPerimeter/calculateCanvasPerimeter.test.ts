@@ -19,4 +19,11 @@ describe("calculateCanvasPerimeter", () => {
     expect(calculateCanvasPerimeter('1', '0')).toBe(0);
     expect(calculateCanvasPerimeter('0', '0')).toBe(0);
   });
+
+
+  test('should handle negative values correctly', () => {
+    expect(calculateCanvasPerimeter('-3', '4')).toBeCloseTo(14);
+    expect(calculateCanvasPerimeter('3', '-4')).toBeCloseTo(14);
+    expect(calculateCanvasPerimeter('-3', '-4')).toBeCloseTo(14);
+  });
 });
