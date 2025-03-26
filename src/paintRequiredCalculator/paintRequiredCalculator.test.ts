@@ -10,4 +10,8 @@ describe("paint required calculator", () => {
   test('should return 0 for area of 0', () => {
     expect(paintRequiredCalculator(0, 10)).toBe(0);
   });
+
+  test('should return 0 for coveragePerLiter of 0', () => {
+    expect(paintRequiredCalculator(100, 0)).toBe(Infinity);
+  });
 });
