@@ -66,3 +66,10 @@ npm run test [my test name]
 ```
 npm run test calculateCanvasDiagonal
 ```
+
+- To run test on calculateCanvasPerimeter use
+
+```
+npm run test calculateCanvasPerimeter
+```
+
