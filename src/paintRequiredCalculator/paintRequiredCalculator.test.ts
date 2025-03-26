@@ -14,4 +14,10 @@ describe("paint required calculator", () => {
   test('should return 0 for coveragePerLiter of 0', () => {
     expect(paintRequiredCalculator(100, 0)).toBe(Infinity);
   });
+
+  test('should handle negative values correctly', () => {
+    expect(paintRequiredCalculator(-100, 10)).toBe(-10);
+    expect(paintRequiredCalculator(100, -10)).toBe(-10);
+    expect(paintRequiredCalculator(-100, -10)).toBe(10);
+  });
 });
