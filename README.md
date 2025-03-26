@@ -73,3 +73,47 @@ npm run test calculateCanvasDiagonal
 npm run test calculateCanvasPerimeter
 ```
 
+- To run test on calculateCanvasSize use
+
+```
+npm run test calculateCanvasSize
+```
+
+- To run test on calculatePaintCost use
+
+```
+npm run test calculatePaintCost
+```
+
+- To run test on calculateTotalCost use
+
+```
+npm run test calculateTotalCost
+```
+
+- To run test on convertAreaToSquareFeet use
+
+```
+npm run test convertAreaToSquareFeet
+```
+
+- To run test on estimatePaintingTime use
+
+```
+npm run test estimatePaintingTime
+```
+
+- To run test on paintRequiredCalculator use
+
+```
+npm run test paintRequiredCalculator
+```
+
+- To run test on paintRequiredForMultipleCoats use
+
+```
+npm run test paintRequiredForMultipleCoats
+```
+
+
+
