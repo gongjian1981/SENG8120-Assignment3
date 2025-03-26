@@ -11,7 +11,7 @@ describe('paintRequiredForMultipleCoats', () => {
     expect(paintRequiredForMultipleCoats(0, 10, 2)).toBe(0);
   });
 
-  test('should return 0 for coveragePerLiter of 0', () => {
+  test('should return Infinity for coveragePerLiter of 0', () => {
     expect(paintRequiredForMultipleCoats(100, 0, 2)).toBe(Infinity);
   });
 
@@ -26,6 +26,10 @@ describe('paintRequiredForMultipleCoats', () => {
   });
 
   test('should return 0 for area of 0 and coveragePerLiter of 0', () => {
+    expect(paintRequiredForMultipleCoats(0, 10, 0)).toBe(0);
+  });
+
+  test('should return Infinity for coats of 0 and coveragePerLiter of 0', () => {
     expect(paintRequiredForMultipleCoats(0, 10, 0)).toBe(0);
   });
 
