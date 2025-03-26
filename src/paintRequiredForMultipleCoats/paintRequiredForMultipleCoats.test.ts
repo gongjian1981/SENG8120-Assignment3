@@ -29,8 +29,12 @@ describe('paintRequiredForMultipleCoats', () => {
     expect(paintRequiredForMultipleCoats(0, 10, 0)).toBe(0);
   });
 
-  test('should return Infinity for coats of 0 and coveragePerLiter of 0', () => {
-    expect(paintRequiredForMultipleCoats(0, 10, 0)).toBe(0);
+  test('should return NaN for coats of 0 and coveragePerLiter of 0', () => {
+    expect(paintRequiredForMultipleCoats(10, 0, 0)).toBeNaN();
+  });
+
+  test('should return NaN for area of 0 and coveragePerLiter of 0', () => {
+    expect(paintRequiredForMultipleCoats(0, 0, 10)).toBeNaN();
   });
 
 });
