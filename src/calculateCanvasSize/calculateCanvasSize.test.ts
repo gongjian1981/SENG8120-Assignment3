@@ -24,4 +24,10 @@ describe("calculateCanvasSize", () => {
     expect(calculateCanvasSize('3', '-4')).toBeCloseTo(12);
     expect(calculateCanvasSize('-3', '-4')).toBeCloseTo(12);
   });
+
+  test('should handle non-numeric strings by returning NaN', () => {
+    expect(calculateCanvasSize('a', '4')).toBeNaN();
+    expect(calculateCanvasSize('3', 'b')).toBeNaN();
+    expect(calculateCanvasSize('a', 'b')).toBeNaN();
+  });
 });
