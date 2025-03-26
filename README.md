@@ -1,4 +1,4 @@
-# SENG8120 Modern Automated Testing 
+# SENG8120 Modern Automated Testing
 
 Version: Alpaca
 
@@ -59,3 +59,10 @@ To run a specific test, you can use
 npm run test [my test name]
 ```
 
+### Test Runs
+
+- To run test on calculateCanvasDiagonal use
+
+```
+npm run test calculateCanvasDiagonal
+```
