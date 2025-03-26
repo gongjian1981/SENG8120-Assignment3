@@ -26,4 +26,10 @@ describe("calculateCanvasPerimeter", () => {
     expect(calculateCanvasPerimeter('3', '-4')).toBeCloseTo(14);
     expect(calculateCanvasPerimeter('-3', '-4')).toBeCloseTo(14);
   });
+
+  test('should handle non-numeric strings by returning NaN', () => {
+    expect(calculateCanvasPerimeter('a', '4')).toBeNaN();
+    expect(calculateCanvasPerimeter('3', 'b')).toBeNaN();
+    expect(calculateCanvasPerimeter('a', 'b')).toBeNaN();
+  });
 });
