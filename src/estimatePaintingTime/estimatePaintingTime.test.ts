@@ -15,6 +15,10 @@ describe('estimatePaintingTime', () => {
     expect(estimatePaintingTime(0, 10)).toBe(0);
   });
 
+  test('should return Infinity for both area and painting speed of 0', () => {
+    expect(estimatePaintingTime(0, 0)).toBeNaN();
+  });
+
   test('should handle negative values correctly', () => {
     expect(estimatePaintingTime(-100, 10)).toBe(-10);
     expect(estimatePaintingTime(100, -10)).toBe(-10);
