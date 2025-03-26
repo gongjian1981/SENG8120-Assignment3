@@ -19,5 +19,9 @@ describe("calculateCanvasSize", () => {
     expect(calculateCanvasSize('0', '0')).toBe(0);
   });
 
-
+  test('should handle negative values correctly', () => {
+    expect(calculateCanvasSize('-3', '4')).toBeCloseTo(12);
+    expect(calculateCanvasSize('3', '-4')).toBeCloseTo(12);
+    expect(calculateCanvasSize('-3', '-4')).toBeCloseTo(12);
+  });
 });
