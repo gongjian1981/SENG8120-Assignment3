@@ -3,7 +3,13 @@ export default function calculateCanvasPerimeter(
   width: string
 ) {
   let l = parseInt(length);
+  if (Number.isNaN(l)) {
+    return NaN;
+  }
   let w = parseInt(width);
+  if (Number.isNaN(w)) {
+    return NaN;
+  }
   if (l == 0 || w == 0) {
     return 0;
   }
