@@ -37,4 +37,8 @@ describe('paintRequiredForMultipleCoats', () => {
     expect(paintRequiredForMultipleCoats(0, 0, 10)).toBeNaN();
   });
 
+  test('should return NaN for area of 0 and coveragePerLiter of 0 and coats of 0', () => {
+    expect(paintRequiredForMultipleCoats(0, 0, 0)).toBeNaN();
+  });
+
 });
